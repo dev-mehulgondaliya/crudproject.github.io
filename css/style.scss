@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+$bg-color : #EE534F;
+$text-white : #fff;
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Poppins', sans-serif;
+}
+
+//====================header
+.header{
+    width: 100%;
+    padding: 10px 30px;
+    background: $bg-color;
+
+    h5{
+        font-weight: bold;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 2rem;
+        color: $text-white;
+
+    }
+}
+
+
+#search{
+    border: none;
+    border-bottom: 1px solid $bg-color;
+
+    &:focus{
+        outline: none;
+    }
+}
+
+.btn-orange{
+    background-color: $bg-color;
+    border: none;
+
+    &:hover{
+        background-color: $bg-color;
+    }
+}
+
+.form-control{
+    border: none;
+    border-bottom: 1px solid $bg-color;
+    border-radius: 0;
+
+    &:focus{
+        box-shadow: none;
+    }
+}
+
+.adddetailsform{
+    border-left: 1px solid $bg-color;
+}
+
+.profileimg-table{
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.custom-file-upload {
+    display: inline-block;
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+}
+
+.custom-file-upload i {
+    margin-right: 8px;
+}
+
+.custom-file-upload input[type="file"] {
+    display: none;
+}
